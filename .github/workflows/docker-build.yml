@@ -35,8 +35,6 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            # ghcr.io/${{ github.repository }}:latest
-            # ghcr.io/${{ github.repository }}:${{ github.sha }}
             ghcr.io/yadaveshnithin/devops-task:latest
             ghcr.io/yadaveshnithin/devops-task:${{ github.sha }}
           cache-from: type=gha
