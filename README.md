@@ -1,4 +1,4 @@
-<div align="center">
+<!-- <div align="center">
   <br />
     <a href="https://youtu.be/cuzw4vL1z5E?feature=shared" target="_blank">
       <img src="https://github.com/adrianhajdin/travel_ui_ux/assets/151519281/c72ebf75-847d-4a98-8f8a-24be02dac752" alt="Project Banner">
@@ -449,4 +449,4 @@ And if you're hungry for more than just a course and want to understand how we l
 
 #
 # devops_task
-# devops_task
+# devops_task -->
