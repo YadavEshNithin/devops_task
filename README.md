@@ -381,9 +381,10 @@ minikube delete
 
 ## 🔗 Important Links
 
-- **GitHub Repository**: [Your Repository URL]
+- **GitHub Repository**: `https://github.com/YadavEshNithin/devops_task`
+- **GHCR Image URL**: `ghcr.io/yadaveshnithin/devops-task:latest`
 - **GHCR Package**: `https://github.com/yadaveshnithin?tab=packages`
-- **GitHub Actions**: `https://github.com/yadaveshnithin/devops-assessment/actions`
+
 
 ---
 
