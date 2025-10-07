@@ -2,8 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nextjs-app
-  labels:
-    app: nextjs-app
 spec:
   replicas: 3
   selector:
@@ -16,7 +14,7 @@ spec:
     spec:
       containers:
       - name: nextjs-app
-        image: ghcr.io/your-username/your-repo-name:latest
+        image: ghcr.io/yadaveshnithin/devops-task:latest  # Your GHCR image
         ports:
         - containerPort: 3000
         env:

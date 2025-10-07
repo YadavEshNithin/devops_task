@@ -1,4 +1,4 @@
-name: Build and Push to GHCR
+name: Build, Push and Deploy
 
 on:
   push:
@@ -42,3 +42,18 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+
+  deploy:
+    needs: build-and-push
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Kubernetes tools
+        uses: engineerd/setup-kind@v0.6.0
+        # Or use minikube setup if preferred
+
+      - name: Deploy to Kubernetes
+        run: |
+          kubectl apply -f k8s/
